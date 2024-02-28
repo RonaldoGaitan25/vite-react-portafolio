@@ -2,96 +2,169 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: black; /* Cambiar el color de fondo del menú */
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px; /* ajusta el tamaño del logo según tus necesidades */
-    margin-right: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li:hover {
-    color: #ff5733; /* color de texto en hover */
-  }
-  
-  .banner {
-    position: relative;
-    flex: 1;
-    margin: 0;
     
   }
   
-  .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    height: 100vh;
-  }
-  
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  .banner-text h2 {
-    font-size: 36px;
-  }
-  
-  .banner-text p {
-    font-size: 18px;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    
+/* Estilos del menú */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
 
-  }
+.logo h1 {
+  margin: 0;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li button {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu li button:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de las secciones */
+section {
+  display: none;
   
+  background-color: #022b27;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Estilos específicos para la sección de inicio */
+#inicio {
+  display: block;
+  height: 90vh; /* O 100vh si prefieres ocupar toda la altura de la pantalla */
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Estilos del footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* Estilos de la sección de experiencia */
+#experiencia {
+  display: block;
+  padding: 50px 20px;
+  background-color: rgba(249, 249, 249, 0.2);
+}
+
+.experience-header {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Dos columnas con ancho mínimo de 300px */
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.experience-grid img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Estilos de la sección de proyectos */
+#proyectos {
+  display: block;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.project-info p {
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos de la sección "Sobre Mí" */
+#sobre-mi {
+  display: block;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-me {
+  max-width: 600px;
+  margin: 0 auto;
+  color: black;
+}
+
+.about-me p {
+  margin-bottom: 10px;
+}
+
+.about-me span {
+  margin-left: 5px;
+}
