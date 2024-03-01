@@ -49,6 +49,8 @@ import imagen8 from './Experiencia/imagen-8.jpg';
 import imagen9 from './Experiencia/imagen-9.png';
 import imagen10 from './Experiencia/imagen-10.png';
 import imagen11 from './Experiencia/imagen-11.jpg';
+import portafolio from './assets/portafolio-v1.png';
+import encrip from './assets/encriptador.png';
 
 
 function Home() {
@@ -64,7 +66,8 @@ function Home() {
       <header>
         <div className="logo">
           {/* Coloca aquí tu logo */}
-          <h1>Logo</h1>
+          <h1 className='nombre-logo' data-text="onaldo">R</h1>
+          
         </div>
         <nav>
           <ul className="menu">
@@ -87,7 +90,7 @@ function Home() {
   <section id="experiencia">
     <div className="experience-header">
       <h2>Experiencia</h2>
-      <p>Aquí está una colección de nuestras experiencias:</p>
+      <p>Aquí está una colección sobre edicion de imagen:</p>
  </div>
  <div className="experience-grid">
    <img src={imagen1} alt="Imagen 1" />
@@ -121,7 +124,7 @@ function Home() {
       </div>
       <div className="project-image">
         <a href="enlace-del-proyecto-1">
-          <img src="./assets/encriptador.png" alt="Proyecto 1" />
+          <img src={encrip} alt="Proyecto 1" />
         </a>
       </div>
     </div>
@@ -133,7 +136,7 @@ function Home() {
       </div>
       <div className="project-image">
         <a href="enlace-del-proyecto-2">
-          <img src="./assets/portafolio-v1.png" alt="Proyecto 2" />
+          <img src={portafolio} alt="Proyecto 2" />
         </a>
       </div>
     </div>
@@ -148,15 +151,15 @@ function Home() {
     <div className="about-me">
       <p>Nombre: Ronaldo</p>
       <p>Edad: 26</p>
-      <p>Conocimientos: Lenguajes de programación y editores de fotos <span>(iconos)</span></p>
+      <p>Conocimientos: Lenguajes de programación y editores de fotos </p>
+      
     </div>
   </section>
 )}
+  <footer>
+    <p>Texto</p>
+  </footer>
 
-
-      <footer>
-        <p>Footer</p>
-      </footer>
     </div>
   );
 }
