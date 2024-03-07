@@ -75,10 +75,12 @@ section h2 {
   margin-top: 0;
 }
 
+
+
 /* Estilos específicos para la sección de inicio */
 #inicio {
   display: block;
-  height: 90vh; /* O 100vh si prefieres ocupar toda la altura de la pantalla */
+  height: 90vh;
 }
 
 .banner {
@@ -86,6 +88,7 @@ section h2 {
   height: 100%;
   object-fit: cover;
 }
+
 /* Estilos del footer */
 footer {
   background-color: #333;
@@ -93,8 +96,6 @@ footer {
   text-align: center;
   padding: 10px;
 }
-
-
 
 
 /* Estilos de la sección de experiencia */
@@ -112,8 +113,8 @@ footer {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Dos columnas con ancho mínimo de 300px */
-  gap: 10px; /* Espacio entre las imágenes */
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 10px; 
 }
 
 .experience-grid img {
@@ -135,24 +136,42 @@ footer {
 }
 
 .project {
-  display: flex;
+  position: relative;
+  display: block;
   margin-bottom: 20px;
+  overflow: hidden; /* Evita que los elementos de texto se salgan del contenedor */
 }
 
 .project-info {
-  flex: 1;
+  position: absolute;
+  top: 0; /* Alinea los elementos de texto en la parte inferior del contenedor */
+  left: 0;
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px; /* Añade espacio alrededor de los elementos */
+  padding-top: 100px;
+  padding-bottom: 150px;
+  text-align: center;
+  opacity: 0; /* Oculta los elementos de texto por defecto */
+  transition: opacity 0.3s ease; /* Añade una transición suave */
+}
+
+.project:hover .project-info {
+  opacity: 1; /* Muestra los elementos de texto al pasar el ratón sobre el proyecto */
 }
 
 .project-info h3 {
   margin-top: 0;
+  font-size: 20px; /* Ajusta el tamaño del título */
 }
 
 .project-info p {
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Reduce el espacio entre el título y la descripción */
+  font-size: 16px; /* Ajusta el tamaño de la descripción */
 }
 
 .project-info a {
-  display: block;
   color: #007bff;
   text-decoration: none;
 }
@@ -162,22 +181,22 @@ footer {
 }
 
 .project-image img {
-  
-  width: 80%;
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
   height: auto;
 }
+
 
 /* Estilos de la sección "Sobre Mí" */
 #sobre-mi {
   display: block;
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.2);
 }
 
 .about-me {
   max-width: 600px;
   margin: 0 auto;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .about-me p {
@@ -186,4 +205,17 @@ footer {
 
 .about-me span {
   margin-left: 5px;
+}
+
+
+.icon-row {
+  display: flex;
+  justify-content: center; /* Centra los iconos horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.icon-row img {
+  width: 60px; /* Tamaño de los iconos */
+  height: auto; /* Mantener la proporción de aspecto */
+  margin: 0 10px; /* Espacio horizontal entre los iconos */
 }

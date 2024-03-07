@@ -1,40 +1,3 @@
-/*import React from 'react';
-import './Home.css';
-import Banner from './Banner.png';
-
-function Home() {
-  return (
-    <div className="container">
-      <div className="header">
-        <div className="logo">
-          <img src="./assets/2montaña_logo_2.png" alt="Logo" />
-          <span>Nombre</span>
-        </div>
-        <nav>
-          <ul>
-            <li>Inicio</li>
-            <li>Medio</li>
-            <li>Final</li>
-          </ul>
-        </nav>
-      </div>
-      <div className="banner">
-        <img src={Banner} alt="Banner" />
-        <div className="banner-text">
-          <h2>Título principal</h2>
-          <p>Texto secundario</p>
-        </div>
-      </div>
-      <footer className="footer">
-        Este es el footer.
-      </footer>
-    </div>
-  );
-}
-
-export default Home;
-*/
-
 import React, { useState } from 'react';
 import './Home.css';
 import Banner from './Banner.png';
@@ -51,6 +14,10 @@ import imagen10 from './Experiencia/imagen-10.png';
 import imagen11 from './Experiencia/imagen-11.jpg';
 import portafolio from './assets/portafolio-v1.png';
 import encrip from './assets/encriptador.png';
+import html from './assets/html_logo.png';
+import java from './assets/javascript_logo.png';
+import react from './assets/react-logo.png';
+import photo from './assets/photoshop_logo.png';
 
 
 function Home() {
@@ -82,7 +49,7 @@ function Home() {
       {currentPage === 'inicio' && (
         <section id="inicio">
           <img className='banner' src={Banner} alt='banner' />
-          {/* Aquí va el contenido del banner */}
+          
         </section>
       )}
 
@@ -119,11 +86,11 @@ function Home() {
     <div className="project">
       <div className="project-info">
         <h3>Encriptador de Texto</h3>
-        <p>Descripción del proyecto 1.</p>
-        <a href="enlace-del-proyecto-1">Enlace al proyecto 1</a>
+        <p>Este es un encriptador de texto básico funcional. Esta herramienta tiene la capacidad de encriptar y desencriptar cualquier texto que ingreses.</p>
+        <a href="https://ronaldogaitan25.github.io/challenge-encriptadorONE/" target="_blank" rel="noopener noreferrer">"¡Encripta tu texto con un clic!"</a>
       </div>
       <div className="project-image">
-        <a href="enlace-del-proyecto-1">
+        <a href="https://ronaldogaitan25.github.io/challenge-encriptadorONE/" target="_blank" rel="noopener noreferrer">
           <img src={encrip} alt="Proyecto 1" />
         </a>
       </div>
@@ -131,11 +98,11 @@ function Home() {
     <div className="project">
       <div className="project-info">
         <h3>Prortafolio-html</h3>
-        <p>Descripción del proyecto 2.</p>
-        <a href="enlace-del-proyecto-2">Enlace al proyecto 2</a>
+        <p>Este proyecto presenta mi primer portafolio, construido únicamente con HTML y CSS, marcando mis primeros pasos en el desarrollo web.</p>
+        <a href="https://ronaldogaitan25.github.io/portafolio/" target="_blank" rel="noopener noreferrer">"¡Echa un vistazo a mi primer portafolio hecho solo con HTML y CSS!"</a>
       </div>
       <div className="project-image">
-        <a href="enlace-del-proyecto-2">
+        <a href="https://ronaldogaitan25.github.io/portafolio/" target="_blank" rel="noopener noreferrer">
           <img src={portafolio} alt="Proyecto 2" />
         </a>
       </div>
@@ -149,15 +116,24 @@ function Home() {
       <h2>Sobre Mí</h2>
     </div>
     <div className="about-me">
-      <p>Nombre: Ronaldo</p>
-      <p>Edad: 26</p>
-      <p>Conocimientos: Lenguajes de programación y editores de fotos </p>
+      <p>¡Hola! Soy Ronaldo, cuento con una fuerte capacidad de adaptación y una actitud abierta hacia el aprendizaje continuo. Obtuve experiencia en los cursos de AluraLatam  me ha permitido enfrentar desafíos con flexibilidad y encontrar soluciones innovadoras. Siempre estoy buscando nuevas oportunidades para crecer y aprender, ya sea explorando nuevas tecnologías o colaborando en proyectos emocionantes. Con un enfoque proactivo y una mentalidad de crecimiento, estoy entusiasmado por las oportunidades futuras y por seguir evolucionando en mi carrera profesional.
+
+</p>
+      <p>Mi Edad: 26</p>
+      <p>Perfil Junior: Desarrollo Web Frontend y Edición de Fotos
+Como aspirante en desarrollo web frontend, estoy aprendiendo a crear interfaces atractivas con HTML, CSS y JavaScript. También estoy explorando la edición de fotos para mejorar la calidad visual de mis proyectos. Comprometido con mi crecimiento, estoy abierto a aprender y mejorar continuamente en estas áreas. </p>
       
+      <div className="icon-row">
+        <img src={photo} alt="Photoshop" />
+        <img src={html} alt="HTML" />
+        <img src={java} alt="JavaScript" />
+        <img src={react} alt="React" />
+      </div>
     </div>
   </section>
 )}
   <footer>
-    <p>Texto</p>
+    <p>© 2024 [---]. Todos los derechos reservados. | Desarrollado con ❤️ utilizando React + Vite y JavaScript por [Ronaldo Gaitan]. Desarrollado desde cero. </p>
   </footer>
 
     </div>

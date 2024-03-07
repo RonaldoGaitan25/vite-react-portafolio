@@ -21,7 +21,7 @@
   height: 100%;
   background-image: url(https://www.pixground.com/wp-content/uploads/2023/09/Retro-Pixel-Art-AI-Generated-4K-Wallpaper-1-jpg.webp);
   background-size: cover;
-  filter: blur(10px); /* Aplica un efecto de desenfoque a esta capa */
-  z-index: -1; /* Coloca la capa detrás del contenido */
+  filter: blur(10px);
+  z-index: -1;
 }
 
