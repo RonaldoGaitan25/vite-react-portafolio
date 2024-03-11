@@ -47,11 +47,17 @@ function Home() {
       </header>
 
       {currentPage === 'inicio' && (
-        <section id="inicio">
-          <img className='banner' src={Banner} alt='banner' />
-          
-        </section>
-      )}
+  <section id="inicio">
+    <div className="banner">
+      <img src={Banner} alt='banner' />
+      <div className="banner-content">
+        <h1>Dev Front-End y Diseño Gráfico</h1>
+        <p>"Mi Portafolio: Desarrollador Junior en Formación. Todo el contenido exhibido ha sido concebido y diseñado por mí."</p>
+      </div>
+    </div>
+  </section>
+)}
+
 
 {currentPage === 'experiencia' && (
   <section id="experiencia">
@@ -116,13 +122,13 @@ function Home() {
       <h2>Sobre Mí</h2>
     </div>
     <div className="about-me">
-      <p>¡Hola! Soy Ronaldo, cuento con una fuerte capacidad de adaptación y una actitud abierta hacia el aprendizaje continuo. Obtuve experiencia en los cursos de AluraLatam  me ha permitido enfrentar desafíos con flexibilidad y encontrar soluciones innovadoras. Siempre estoy buscando nuevas oportunidades para crecer y aprender, ya sea explorando nuevas tecnologías o colaborando en proyectos emocionantes. Con un enfoque proactivo y una mentalidad de crecimiento, estoy entusiasmado por las oportunidades futuras y por seguir evolucionando en mi carrera profesional.
+      <p>¡Hola! Soy Ronaldo, cuento con una fuerte capacidad de adaptación y una actitud abierta hacia el aprendizaje continuo. Obtuve experiencia en los cursos de <a className='alura' href="https://www.aluracursos.com/">AluraLatam</a>  me ha permitido enfrentar desafíos con flexibilidad y encontrar soluciones innovadoras. Siempre estoy buscando nuevas oportunidades para crecer y aprender, ya sea explorando nuevas tecnologías o colaborando en proyectos emocionantes. Con un enfoque proactivo y una mentalidad de crecimiento, estoy entusiasmado por las oportunidades futuras y por seguir evolucionando en mi carrera profesional.
 
 </p>
       <p>Mi Edad: 26</p>
       <p>Perfil Junior: Desarrollo Web Frontend y Edición de Fotos
 Como aspirante en desarrollo web frontend, estoy aprendiendo a crear interfaces atractivas con HTML, CSS y JavaScript. También estoy explorando la edición de fotos para mejorar la calidad visual de mis proyectos. Comprometido con mi crecimiento, estoy abierto a aprender y mejorar continuamente en estas áreas. </p>
-      
+      <p><em>"Con el tiempo adecuado, puedo lograrlo."</em></p>
       <div className="icon-row">
         <img src={photo} alt="Photoshop" />
         <img src={html} alt="HTML" />
