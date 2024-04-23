@@ -12,6 +12,9 @@ import imagen8 from './Experiencia/imagen-8.jpg';
 import imagen9 from './Experiencia/imagen-9.png';
 import imagen10 from './Experiencia/imagen-10.png';
 import imagen11 from './Experiencia/imagen-11.jpg';
+import imagen12 from './Experiencia/imagen-12.jpg';
+import imagen13 from './Experiencia/imagen-13.png';
+import imagen14 from './Experiencia/imagen-14.png';
 import portafolio from './assets/portafolio-v1.png';
 import encrip from './assets/encriptador.png';
 import html from './assets/html_logo.png';
@@ -73,10 +76,13 @@ function Home() {
    <img src={imagen5} alt="Imagen 1" />
    <img src={imagen6} alt="Imagen 1" />
    <img src={imagen7} alt="Imagen 1" />
-   <img src={imagen8} alt="Imagen 1" />
+   <img src={imagen11} alt="Imagen 1" />
    <img src={imagen9} alt="Imagen 1" />
    <img src={imagen10} alt="Imagen 1" />
-   <img src={imagen11} alt="Imagen 1" />
+   <img src={imagen8} alt="Imagen 1" />
+   <img src={imagen12} alt="Imagen 1" />
+   <img src={imagen13} alt="Imagen 1" />
+   <img src={imagen14} alt="Imagen 1" />
 
    
  </div>
@@ -103,7 +109,7 @@ function Home() {
     </div>
     <div className="project">
       <div className="project-info">
-        <h3>Prortafolio-html</h3>
+        <h3>Portafolio-html</h3>
         <p>Este proyecto presenta mi primer portafolio, construido únicamente con HTML y CSS, marcando mis primeros pasos en el desarrollo web.</p>
         <a href="https://ronaldogaitan25.github.io/portafolio/" target="_blank" rel="noopener noreferrer">"¡Echa un vistazo a mi primer portafolio hecho solo con HTML y CSS!"</a>
       </div>

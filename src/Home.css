@@ -2,7 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
 /* Estilos del menú */
@@ -138,6 +140,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-top: auto;
 }
 
 
@@ -156,7 +159,7 @@ footer {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 10px; 
 }
 
@@ -269,4 +272,113 @@ footer {
   width: 60px; /* Tamaño de los iconos */
   height: auto; /* Mantener la proporción de aspecto */
   margin: 0 10px; /* Espacio horizontal entre los iconos */
+}
+
+
+/* Media query para ajustar el menú en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .menu li {
+    display: block; /* Cambiamos a bloque para que se apilen uno encima del otro */
+    margin: 10px 0; /* Añadimos un espacio entre los elementos */
+  }
+
+  .menu li button {
+    padding: 10px 20px; /* Añadimos relleno para que se vea como un cuadro */
+    border-radius: 5px; /* Agregamos esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Agregamos una transición suave para el efecto hover */
+  }
+
+  .menu li button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cambiamos el color de fondo en hover */
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .nombre-logo{
+    display: none;
+  }
+  .menu li button {
+    font-size: 14px;
+  }
+
+  #inicio, .banner {
+    height: 70vh;
+  }
+
+  
+  .experience-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .menu li button {
+    font-size: 12px;
+  }
+
+  #inicio, .banner, .banner-content {
+    height: 50vh;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner-content {
+    max-width: 80%; /* Reducimos el ancho máximo del banner-content */
+    font-size: 1.25rem; /* Ajustamos el tamaño del texto */
+    padding: 10px; /* Reducimos el padding */
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem; /* Ajustamos el tamaño del título */
+  }
+
+  .banner-content p {
+    font-size: 1rem; /* Ajustamos el tamaño del párrafo */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-info {
+    padding-top: 10px; /* Ajustamos el espaciado superior */
+     
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem; /* Ajustamos el tamaño del título */
+  }
+
+  .project-info p {
+    font-size: 0.9rem; /* Ajustamos el tamaño del texto */
+  }
 }

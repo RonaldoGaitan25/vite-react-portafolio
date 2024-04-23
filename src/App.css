@@ -10,3 +10,7 @@ body {
   min-height: 100vh;
 }
 
+/* Media queries */
+@media screen and (max-width: 768px) {
+  /* Agregar estilos específicos para pantallas más pequeñas */
+}
